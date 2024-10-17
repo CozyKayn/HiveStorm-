@@ -14,4 +14,6 @@ we noticed the firewall was off, we turned it on
 
 after looking into the users we found unauthorized users under the names "hcampbell", "kmiyashrio"
 we deleted them from the systems
-we also added starlight to the users 
+we also added starlight to the users
+atrain also had admin permissions which he isnt supposed to. we removed his admin permissions
+
