@@ -1,0 +1,17 @@
+FTP02/windows server 2022 writeup
+forensics 1: asked us to find the name of the firewall rule that blocked FTP communication
+we did this by opening firewall adavanced search and found the "Virtual FTP removal" rule which was the answer
+we removed this as well
+
+forensics 2: asked us to find the port that a backdoor file "tini.exe" was listening to
+we did this by using the command prompt "tasklist" and found the exe file with its PID session name which was "1568 services"
+after this we used "netstat" to find all active files working and traced it with 1568 services and found the port which was "8374"
+
+check for sensitive files in FTP file: 
+open file explorer and search for given path C:/FTP and locate any sensitive files and remove them from the folder (it was 1 file)
+
+we noticed the firewall was off, we turned it on 
+
+after looking into the users we found unauthorized users under the names "hcampbell", "kmiyashrio"
+we deleted them from the systems
+we also added starlight to the users 
